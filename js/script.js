@@ -44,8 +44,8 @@
         WeixinJSBridge.on('menu:share:appmessage', function (argv) {
             WeixinJSBridge.invoke('sendAppMessage', {
                 "img_url": "https://cielzhao.github.io/lovelycat/images/og.jpg",
-                "img_width": "1200",
-                "img_height": "1200",
+                "img_width": "300",
+                "img_height": "300",
                 "link": window.shareData.sendFriendLink,
                 "desc": window.shareData.fContent,
                 "title": window.shareData.fTitle

@@ -1,0 +1,292 @@
+* { margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; font-family: "Microsoft YaHei"}
+.container { width: 100%; height: 100%; left: 0; top: 0%; position: absolute;}
+.container .page { height: 100%; color:#fff;text-align:center; position: relative;}
+.page.cur {
+    -webkit-animation: scale 3s 1 forwards;
+       -moz-animation: scale 3s 1 forwards;
+         -o-animation: scale 3s 1 forwards;
+        -ms-animation: scale 3s 1 forwards;
+            animation: scale 3s 1 forwards;
+}
+@-webkit-keyframes scale {
+    0%{ width: 100%; height: 100%; opacity: .6;}
+    100%{ width: 110%; height: 110%; opacity: 1;}
+}
+@-ms-keyframes scale {
+    0%{ width: 100%; height: 100%; opacity: .6;}
+    100%{ width: 110%; height: 110%; opacity: 1;}
+}
+@-o-keyframes scale {
+    0%{ width: 100%; height: 100%; opacity: .6;}
+    100%{ width: 110%; height: 110%; opacity: 1;}
+}
+@-moz-keyframes scale {
+    0%{ width: 100%; height: 100%; opacity: .6;}
+    100%{ width: 110%; height: 110%; opacity: 1;}
+}
+@keyframes scale {  
+    0%{ width: 100%; height: 100%; opacity: .6;}
+    100%{ width: 110%; height: 110%; opacity: 1;}
+}
+
+/* slide */
+.page .slide {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	bottom: 5px;
+	z-index: 5;
+    -webkit-animation: slide 1s linear infinite;
+       -moz-animation: slide 1s linear infinite;
+         -o-animation: slide 1s linear infinite;
+        -ms-animation: slide 1s linear infinite;
+            animation: slide 1s linear infinite;
+}
+@-webkit-keyframes slide {
+    0%{ bottom: 5px;}
+    100%{ bottom: 0;}
+}
+@-ms-keyframes slide {
+    0%{ bottom: 5px;}
+    100%{ bottom: 0;}
+}
+@-o-keyframes slide {
+    0%{ bottom: 5px;}
+    100%{ bottom: 0;}
+}
+@-moz-keyframes slide {
+    0%{ bottom: 5px;}
+    100%{ bottom: 0;}
+}
+@keyframes slide {  
+    0%{ bottom: 5px;}
+    100%{ bottom: 0;}
+}
+
+
+
+/* page1 */
+.page1 {
+    background: url("../images/page1_bg.jpg")no-repeat;
+    background-size: 100%;
+}
+@media only screen and (min-width: 1068px) {
+    .page1 {
+    background: url("../images/page1_large_bg.jpg")no-repeat;
+    background-size: 100%;
+    }
+}
+.page1 .texts {
+	position: absolute; 
+	background-color: rgba(0,0,0, .4);
+	color: #fff;
+	font-size: 14px; 
+	width: 100%; 
+	height: 150px; 
+	top:60%;
+	padding-top: 15px;
+	text-align: center;
+	opacity: 0;
+    -webkit-animation: fade-in 4s ease 3s 1 forwards;
+       -moz-animation: fade-in 4s ease 3s 1 forwards;
+         -o-animation: fade-in 4s ease 3s 1 forwards;
+        -ms-animation: fade-in 4s ease 3s 1 forwards;
+            animation: fade-in 4s ease 3s 1 forwards;
+}
+@-webkit-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-ms-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-o-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@-moz-keyframes fade-in{
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@keyframes fade-in{  
+    0%{ opacity: 0;}
+    100%{opacity:1;}
+}
+@media only screen and (max-width: 1068px) {
+    .page1 .texts {
+        top: 70%;
+    }
+}
+@media only screen and (max-width: 735px) {
+    .page1 .texts {
+        top: 55%;
+    }
+}
+.page1 .texts p {
+    line-height: 30px;
+}
+
+
+
+/* page2 */
+.page2 {
+    background: url("../images/page2_bg.jpg")no-repeat;
+    background-size: 100%;
+}
+@media only screen and (min-width: 1068px) {
+    .page2 {
+    background: url("../images/page2_large_bg.jpg")no-repeat;
+    background-size: 100%;
+    }
+}
+
+
+/* page3 */
+.page3 {
+    background: url("../images/page3_bg.jpg")no-repeat;
+    background-size: 100%;
+}
+@media only screen and (min-width: 1068px) {
+    .page3 {
+    background: url("../images/page3_large_bg.jpg")no-repeat;
+    background-size: 100%;
+    }
+}
+
+
+/* page4 */
+.page4 {
+    background: url("../images/page4_bg.jpg")no-repeat;
+    background-size: 100%;
+}
+@media only screen and (min-width: 1068px) {
+    .page4 {
+    background: url("../images/page4_large_bg.jpg")no-repeat;
+    background-size: 100%;
+    }
+}
+
+
+
+/* page5 */
+.page5 {
+    background: url("../images/page5_bg.jpg")no-repeat;
+    background-size: 100%;
+}
+@media only screen and (min-width: 1068px) {
+    .page5 {
+    background: url("../images/page5_large_bg.jpg")no-repeat;
+    background-size: 100%;
+    }
+}
+.page5 .box {
+    margin-top: 110%;
+    width: 400px;
+    height: 150px;
+    position: absolute;
+}
+@media only screen and (max-width: 1068px) {
+    .page5 .box {
+    margin-left: 50%;
+    }
+}
+@media only screen and (max-width: 735px) {
+    .page5 .box {
+    margin-left: 0;
+    }
+}
+.page5 .box .ball {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top:0;
+    left:50%;
+    background: -webkit-linear-gradient(#fff, #fe7201);
+    background:    -moz-linear-gradient(#fff, #fe7201); 
+    background:     -ms-linear-gradient(#fff, #fe7201);
+    background:      -o-linear-gradient(#fff, #fe7201);     
+    background:         linear-gradient(#fff, #fe7201);
+    box-shadow: inset 0 0 30px #f6852a,inset 0 -15px 50px #f6852a;
+    -webkit-animation: jump 1s ease-in-out infinite;
+       -moz-animation: jump 1s ease-in-out infinite;
+        -ms-animation: jump 1s ease-in-out infinite;
+         -o-animation: jump 1s ease-in-out infinite;
+            animation: jump 1s ease-in-out infinite;
+    z-index: 1;
+}
+@-webkit-keyframes jump {
+    0%{ top:0;}
+    65%{ top:80px; height:70px;}
+    75%{ height:60px;}
+    100%{top:0; height:70px;}
+}
+@-moz-keyframes jump {
+    0%{ top:0;}
+    65%{ top:80px; height:70px;}
+    75%{ height:60px;}
+    100%{top:0; height:70px;}
+}
+@-ms-keyframes jump {
+    0%{ top:0;}
+    65%{ top:80px; height:70px;}
+    75%{ height:60px;}
+    100%{top:0; height:70px;}
+}
+@-o-keyframes jump {
+    0%{ top:0;}
+    65%{ top:80px; height:70px;}
+    75%{ height:60px;}
+    100%{top:0; height:70px;}
+}
+@keyframes jump {
+    0%{ top:0;}
+    65%{ top:80px; height:70px;}
+    75%{ height:60px;}
+    100%{top:0; height:70px;}
+}
+
+.page5 .box .shadow {
+    width:45px;
+    height:30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+    margin-left: -40px;
+    background: rgba(20,20,20, .1);
+    box-shadow: 0 0 25px 20px rgba(20,20,20, .1);
+    transform: scaleY(.3);
+    -webkit-animation: shrink 1s infinite;
+       -moz-animation: shrink 1s infinite;
+        -ms-animation: shrink 1s infinite;
+         -o-animation: shrink 1s infinite;
+            animation: shrink 1s infinite;
+}
+@-webkit-keyframes shrink {
+    0%{ width:45px; height:30px;}
+    65%{ width:0; height:0; background: rgba(20,20,20, .3); margin-left: -5px;}
+    100%{width:45px; height:30px; background: rgba(20,20,20, .1);  box-shadow: 0 0 25px 20px rgba(20,20,20, .1); }
+}
+@-moz-keyframes shrink {
+    0%{ width:45px; height:30px;}
+    65%{ width:0; height:0; background: rgba(20,20,20, .3); margin-left: -5px;}
+    100%{width:45px; height:30px; background: rgba(20,20,20, .1);  box-shadow: 0 0 25px 20px rgba(20,20,20, .1); }
+}
+@-ms-keyframes shrink {
+    0%{ width:45px; height:30px;}
+    65%{ width:0; height:0; background: rgba(20,20,20, .3); margin-left: -5px;}
+    100%{width:45px; height:30px; background: rgba(20,20,20, .1);  box-shadow: 0 0 25px 20px rgba(20,20,20, .1); }
+}
+@-o-keyframes shrink {
+    0%{ width:45px; height:30px;}
+    65%{ width:0; height:0; background: rgba(20,20,20, .3); margin-left: -5px;}
+    100%{width:45px; height:30px; background: rgba(20,20,20, .1);  box-shadow: 0 0 25px 20px rgba(20,20,20, .1); }
+}
+@keyframes shrink {
+    0%{ width:45px; height:30px;}
+    65%{ width:0; height:0; background: rgba(20,20,20, .3); margin-left: -5px;}
+    100%{width:45px; height:30px; background: rgba(20,20,20, .1);  box-shadow: 0 0 25px 20px rgba(20,20,20, .1); }
+}
